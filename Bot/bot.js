@@ -3,7 +3,7 @@ const  { Keyboard } = require('telegram-keyboard')
 const TOKEN = "7011088128:AAGUjF7Wj7EOIdaHi--PXhq48rT9rJPZIos";
 const bot = new Telegraf(TOKEN);
 
-const web_link = "http://localhost:3000/"
+const web_link = "https://tele-food-app.vercel.app/"
 bot.start((ctx) =>
   ctx.reply("Welcome", {
     reply_markup: {

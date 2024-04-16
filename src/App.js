@@ -47,19 +47,19 @@ function App() {
     tele.MainButton.text = "Pay :)";
     tele.MainButton.show();
   };
-  const linkToMarketPlace = () => {
-    tele.openMiniApp({
-      url: 'https://testnet.nemoverse.io',
-      data: {
-        user: 'test url'
-      }
-    })
-  }
+  // const linkToMarketPlace = () => {
+  //   tele.openMiniApp({
+  //     url: 'https://testnet.nemoverse.io',
+  //     data: {
+  //       user: 'test url'
+  //     }
+  //   })
+  // }
 
   return (
     <>
       <h1 className="heading">Order Food</h1>
-      <button onClick={linkToMarketPlace}>Market Place</button>
+      <a href="https://testnet.nemoverse.io">Market Place</a>
       <Cart cartItems={cartItems} onCheckout={onCheckout}/>
       <div className="cards__container">
         {foods.map((food) => {
